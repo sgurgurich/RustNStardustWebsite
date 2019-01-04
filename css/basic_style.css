@@ -127,6 +127,7 @@ dd{
 .youtubeEmbed iframe {
   width: 560px;
   height: 315px;
+  padding-left: 14px;
 }
 
 @media (max-width: 600px) {
