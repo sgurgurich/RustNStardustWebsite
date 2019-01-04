@@ -1,0 +1,139 @@
+body {
+    height: 1000px;
+    background-color: red;
+    background-image: url("../images/backgrounds/ep_naturalblack/ep_naturalblack.png");
+    overflow: auto;
+}
+
+.logo{
+  height: 15%;
+  width: 15%;
+  float: left;
+  margin-left: 50px;
+  margin-top: -40px;
+}
+
+a{
+  color: red;
+}
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+}
+
+p {
+    color: red;
+}
+
+p1 {
+    text-align: center;
+}
+
+dt{
+  color: white;
+  text-align: center;
+  font-size: 32pt;
+}
+
+dd{
+  color: white;
+  text-align: center;
+  font-size: 16pt;
+}
+
+.bandBio{
+  color: white;
+  text-align: center;
+  font-size: 16pt;
+  animation: fadeInDown .3s;
+  -webkit-animation: fadeInDown .3s; /* Safari 4.0 - 8.0 */
+}
+
+.socialMediaLinks{
+  text-align: center;
+  font-size: 32pt;
+}
+
+.jumbotron-fluid{
+	background-color: #000000; /* black */
+	background-image: linear-gradient(#000000, #171D25);
+}
+
+.btn-primary{
+	height: 50px;
+	width: 150px;
+	background-color: #880E0E;
+	border: black;
+}
+
+.btn-primary:hover{
+	background-color: #250202;
+}
+
+.btn-primary:focus {
+	background-color: black;
+}
+
+.pictures{
+  max-width: 40%;
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s; /* Safari 4.0 - 8.0 */
+}
+
+.banner{
+  width: 100%;
+}
+
+.carousel img {
+     width: 100%;
+     height: auto;
+}
+
+.musicPage{
+  animation: fadeIn 1s;
+  -webkit-animation: fadeIn 1s; /* Safari 4.0 - 8.0 */
+}
+
+.youtubeEmbed{
+  margin-left: 35%;
+}
+
+.showSearch{
+  margin-left: 45%;
+}
+
+.showsPage{
+  animation: slideInRight .4s;
+  -webkit-animation: slideInRight .4s; /* Safari 4.0 - 8.0 */
+}
+
+.aboutPage{
+  animation: fadeInUp .3s;
+  -webkit-animation: fadeInUp .3s; /* Safari 4.0 - 8.0 */
+}
+
+.contactPage{
+  animation: zoomIn .3s;
+  -webkit-animation: zoomIn .3s; /* Safari 4.0 - 8.0 */
+}
+
+.emailStuff{
+
+}
+
+.socialMedia{
+  position: relative;
+  top: 50px;
+}
+
+.emailNow{
+  margin-left: 46%;
+}
