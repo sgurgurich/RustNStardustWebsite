@@ -1,13 +1,13 @@
 
 
-function goToHome(){  document.location = 'index.html#!/home'}
+function goToHome(){  document.location = '#!/home'}
 
-function goToMusic(){  document.location = 'index.html#!/music'}
+function goToMusic(){  document.location = '#!/music'}
 
-function goToShows(){  document.location = 'index.html#!/shows'}
+function goToShows(){  document.location = '#!/shows'}
 
-function goToMerch(){  document.location = 'index.html#!/merch'}
+function goToMerch(){  document.location = '#!/merch'}
 
-function goToContact(){  document.location = 'index.html#!/contact'}
+function goToContact(){  document.location = '#!/contact'}
 
-function goToAbout(){  document.location = 'index.html#!/about'}
+function goToAbout(){  document.location = '#!/about'}
