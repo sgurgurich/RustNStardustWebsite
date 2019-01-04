@@ -101,7 +101,7 @@ dd{
   height: auto;
 }
 .pictures{
-max-width: 600px;
+  max-width: 600px;
   animation: fadeIn 1s;
   -webkit-animation: fadeIn 1s; /* Safari 4.0 - 8.0 */
 }
@@ -121,9 +121,19 @@ max-width: 600px;
 }
 
 .youtubeEmbed{
-  margin-left: 35%;
-  height: 1200px;
-  width: 800px;
+    text-align: center;
+}
+
+.youtubeEmbed iframe {
+  width: 560px;
+  height: 315px;
+}
+
+@media (max-width: 600px) {
+  .youtubeEmbed iframe {
+    width: 392px;
+    height: 220px;
+  }
 }
 
 .showSearch{
