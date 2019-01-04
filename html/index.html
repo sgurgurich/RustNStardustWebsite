@@ -8,23 +8,23 @@
 
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-  <link rel="stylesheet" href=css/animate.css> <link rel="stylesheet" href=css/basic_style.css> <title>Rust N' Stardust</title>
+  <link rel="stylesheet" href=../css/animate.css> <link rel="stylesheet" href=../css/basic_style.css> <title>Rust N' Stardust</title>
 
-  <script src="app\lib\angular.min.js"></script>
-  <script src="app\lib\angular-route.min.js"></script>
-  <script src="app\lib\angular-animate.min.js"></script>
-  <script src="app\app.js"></script>
-  <script src="app\relocate.js"></script>
-  <script src="app\email.js"></script>
+  <script src="..\app\lib\angular.min.js"></script>
+  <script src="..\app\lib\angular-route.min.js"></script>
+  <script src="..\app\lib\angular-animate.min.js"></script>
+  <script src="..\app\relocate.js"></script>
+  <script src="..\app\app.js"></script>
+  <script src="..\app\email.js"></script>
 </head>
 
 <body>
   <div class="jumbotron jumbotron-fluid">
 
-    <img class="logo" src="images/bandPics/logo.jpg">
+    <img class="logo" src="../images/bandPics/logo.jpg">
 
     <div class="container select-buttons">
-      <img class="banner" src="images/bandPics/banner.png">
+      <img class="banner" src="../images/bandPics/banner.png">
       <p class="lead">The official page of the kick-ass NJ rock group</p>
       <button type="button" class="btn btn-primary" onclick="goToHome()">Home</button>
       <button type="button" class="btn btn-primary" onclick="goToMusic()">Music</button>
@@ -47,13 +47,13 @@
         </ol>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="img-responsive" src="images/bandPics/blackAndWhite_fixed.jpg" alt="First slide">
+            <img class="img-responsive" src="../images/bandPics/blackAndWhite_fixed.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="img-responsive" src="images/bandPics/photo7_fixed.jpg" alt="Second slide">
+            <img class="img-responsive" src="../images/bandPics/photo7_fixed.jpg" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="img-responsive" src="images/bandPics/photo2_fixed.jpg" alt="Third slide">
+            <img class="img-responsive" src="../images/bandPics/photo2_fixed.jpg" alt="Third slide">
           </div>
         </div>
         <!---------------------------------------Turn on for controls------------------------------------------------
@@ -92,12 +92,8 @@
     <div class="showsPage">
     <h3>-- Upcoming Shows --</h3>
     <dl>
-      <dt>October 23, 2018</dt>
-      <dd>Brighton Bar, 7:00pm $10</dd>
-      <dt>October 31, 2018</dt>
-      <dd>Spoooooky Palace, 9:00pm $15</dd>
-      <dt>December 24, 2018</dt>
-      <dd>Christmas Land, 10:00pm $30</dd>
+      <dt>Date TBA</dt>
+      <dd>Locatin TBA, 7:00pm $10</dd>
     </dl>
     </div>
   </script>
@@ -109,7 +105,7 @@
   <script type="text/ng-template" id="contact.htm">
   <div class="contactPage">
     <div class="emailStuff">
-      <h3> For booking, please contact Ethan Chaplin at echaps@gmail.com </h3></br>
+      <h3> For booking, please contact Ethan Chaplin at sgurgurich@gmail.com </h3></br>
       <div class="emailNow"><button type="button" class="btn btn-primary" onclick="emailEthan()">Email Now!</button></div>
     </div>
 
@@ -131,29 +127,27 @@
       <dt><a href="" ng-click="showVocalDetails = ! showVocalDetails">Saya Christie</a></dt>
       <dd>Lead Vocals</dd>
       <div class="bandBio" ng-show="showVocalDetails">
-        My name is Saya and I am a dope singer. I like to do things.
+        Coming Soon!
       </div>
       <dt><a href="" ng-click="showLeadDetails = ! showLeadDetails">Ethan Chaplin</a></dt>
       <dd>Lead Guitar</dd>
       <div class="bandBio" ng-show="showLeadDetails">
-        My name is Ethan. I smell like shit and I collect coins. <br>
-        My friends think I'm a pussy, and I touch myself to pictures of Jacob at night.
+        Coming Soon!
       </div>
       <dt><a href="" ng-click="showRhythmDetails = ! showRhythmDetails">Phil Steinouer</a></dt>
       <dd>Rhythm Guitar</dd>
       <div class="bandBio" ng-show="showRhythmDetails">
-        I'm Phil, but my friends call me Toby McGuire. I play guitar and I can chug like a choo-choo train. <br>
-        Don't fuck with me or I'll chug you to death.
+        Coming Soon!
       </div>
       <dt><a href="" ng-click="showBassDetails = ! showBassDetails">Jacob Jacofsky</a></dt>
       <dd>Bass</dd>
       <div class="bandBio" ng-show="showBassDetails">
-        Me llamo Jacob. No habla ingles, pero yo quiero Rust N' Stardust.
+        Coming Soon!
       </div>
       <dt><a href="" ng-click="showDrumDetails = ! showDrumDetails">Trevor Gurgurich</a></dt>
       <dd>Drums</dd>
       <div class="bandBio" ng-show="showDrumDetails">
-        Two words: Rum Ham.
+        Coming Soon!
       </div>
     </p1>
     </div>
