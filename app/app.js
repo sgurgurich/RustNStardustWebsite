@@ -37,10 +37,10 @@ myApp.config(['$routeProvider', function($routeProvider) {
 }]);
 
 // function called during main execution
-//myApp.run(function(){
+myApp.run(function(){
 
 
-//});
+});
 
 myApp.controller('HomeController', ['$scope', function($scope){
   // do nothing
