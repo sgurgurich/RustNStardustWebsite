@@ -136,6 +136,13 @@ dd{
   }
 }
 
+@media (max-width: 400px) {
+  .youtubeEmbed iframe {
+    width: 280px;
+    height: 157px;
+  }
+}
+
 .showSearch{
   margin-left: 45%;
 }
