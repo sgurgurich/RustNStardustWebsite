@@ -1,3 +1,3 @@
 function emailEthan(){
-    window.open('mailto:sgurgurich@gmail.com?cc=tgurgurich@gmail.com&subject="Contact Via RustNStardustSite"&body="Insert Body Here"');
+    window.open('mailto:echaps77@gmail.com?cc=sgurgurich@gmail.com&subject="Contact Via RustNStardustSite"&body="Ethan, I would like to talk about booking Rust N Stardust!"');
 }
