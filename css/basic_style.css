@@ -96,10 +96,30 @@ dd{
 	background-color: black;
 }
 
+.homeCont{
+  display: flex;
+  flex-direction: row;
+
+}
+
+.news{
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.card{
+  max-width: 18rem;
+  margin-left: 40px;
+  animation: flipInY .6s;
+  -webkit-animation: flipInY .6s; /* Safari 4.0 - 8.0 */
+}
+
 .slide{
   max-width: 100%;
   height: auto;
 }
+
 .pictures{
   max-width: 600px;
   animation: fadeIn 1s;
