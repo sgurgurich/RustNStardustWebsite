@@ -115,6 +115,12 @@ dd{
   -webkit-animation: flipInY .6s; /* Safari 4.0 - 8.0 */
 }
 
+.promotion{
+  max-width: 100%;
+  height: auto;
+  margin-left: 20%;
+}
+
 .slide{
   max-width: 100%;
   height: auto;
