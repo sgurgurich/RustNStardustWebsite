@@ -116,9 +116,15 @@ dd{
 }
 
 .promotion{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.promotion-img{
   max-width: 100%;
   height: auto;
-  margin-left: 20%;
+
 }
 
 .slide{
