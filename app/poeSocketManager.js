@@ -21,18 +21,19 @@ wss.on('connection', (ws) => {
 	ws.on('message', (theMessage) => {
 		message = JSON.parse(theMessage);
         //console.log(theMessage+"\n");
-        switch (message.type){
+        switch (message.header.type){
             case "newConnection":
-                evaluateNewClientRequest(ws,message.uniqueID, message.platform);
+                evaluateNewClientRequest(ws,message.header.uniqueID, message.header.platform);
+								console.log(`Got a new connection! uniqueID= ${message.header.uniqueID}`);
                 break;
             case "disconnect":
-                closeConnection(message.uniqueID, message.platform);
+                closeConnection(message.header.uniqueID, message.header.platform);
                 break;
-			case "tradeAlert":
-                sendMsgToMobile(message, message.uniqueID);
+						case "tradeAlert":
+                sendMsgToMobile(message, message.header.uniqueID);
                 break;
-			case "tradeResponse":
-                sendMsgToPC(message, message.uniqueID);
+			      case "tradeResponse":
+                sendMsgToPC(message, message.header.uniqueID);
                 break;
             default:
                 ws.send("how did you get here..?");
