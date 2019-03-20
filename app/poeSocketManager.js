@@ -13,7 +13,7 @@ const wss = new WebSocket.Server({ server });
 //variables
 var successful = {"success" : true};
 
-var VALID_USERS = {"sG27t8Af"};
+var VALID_USERS = ["sG27t8Af"];
 var CONNECTIONS = {};
 
 
@@ -92,7 +92,7 @@ function updateExistingConnection(ws, uniqueID, platform){
 
 function checkExistingConnection(uniqueID){
 	var output = false;
-	
+
 	if(CONNECTIONS[uniqueID] != null){
 		output = true;
 	}
