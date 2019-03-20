@@ -20,7 +20,7 @@ var CONNECTIONS = {};
 wss.on('connection', (ws) => {
 	ws.on('message', (theMessage) => {
 		message = JSON.parse(theMessage);
-        //console.log(theMessage+"\n");
+        console.log(theMessage+"\n");
         switch (message.header.type){
             case "newConnection":
                 evaluateNewClientRequest(ws,message.header.uniqueID, message.header.platform);
