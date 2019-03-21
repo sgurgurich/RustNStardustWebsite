@@ -22,31 +22,6 @@ var CONNECTIONS = {};
 
 
 wss.on('connection', (ws) => {
-<<<<<<< HEAD
-	ws.on('message', (theMessage) => {
-        console.log("we got a message");
-		message = JSON.parse(theMessage);
-        console.log(theMessage+"\n");
-        switch (message.type){
-            case "newConnection":
-                evaluateNewClientRequest(ws,message.uniqueID, message.platform);
-								console.log(`Got a new connection! uniqueID= ${message.uniqueID}`);
-                break;
-            case "disconnect":
-                closeConnection(message.uniqueID, message.platform);
-                break;
-						case "tradeAlert":
-                sendMsgToMobile(message, message.uniqueID);
-                break;
-			      case "tradeResponse":
-                sendMsgToPC(message, message.uniqueID);
-                break;
-            default:
-                ws.send("how did you get here..?");
-        }
-        //log the received message and send it back to the client
-    });
-=======
   ws.on('message', (theMessage) => {
     message = JSON.parse(theMessage);
     console.log(theMessage + "\n");
@@ -69,7 +44,6 @@ wss.on('connection', (ws) => {
     }
     //log the received message and send it back to the client
   });
->>>>>>> 14994f9255933a6a6ec923a1a21a2ee27e5e013c
 });
 
 function evaluateNewClientRequest(ws, uniqueID, platform) {
