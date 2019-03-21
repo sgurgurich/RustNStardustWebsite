@@ -68,14 +68,14 @@ function createNewConnection(ws, uniqueID, platform) {
       pcSocket: ws,
       mobileSocket: null
     };
-    CONNECTIONS[uniqueID].push(connection);
+    CONNECTIONS[uniqueID] = [connection];
   } else if (platform == "mobileUser") {
     var connection = {
-      connectionID: uniqueID,
-      pcSocket: null,
-      mobileSocket: ws
+      connectionID:uniqueID,
+      pcSocket:null,
+      mobileSocket:ws
     };
-    CONNECTIONS[uniqueID].push(connection);
+    CONNECTIONS[uniqueID] = [connection];
   } else {
     ws.send("you are not on a valid platform");
   }
