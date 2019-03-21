@@ -49,7 +49,7 @@ wss.on('connection', (ws) => {
 function evaluateNewClientRequest(ws, uniqueID, platform) {
 	console.log(uniqueID);
 	console.log(VALID_USERS);
-  if (uniqueID in VALID_USERS) {
+  if (VALID_USERS.includes(uniqueID)) {
     if (checkExistingConnection(uniqueID)) {
       updateExistingConnection(ws, uniqueID, platform)
     } else {
