@@ -19,6 +19,7 @@ var CONNECTIONS = {};
 
 wss.on('connection', (ws) => {
 	ws.on('message', (theMessage) => {
+        console.log("we got a message");
 		message = JSON.parse(theMessage);
         console.log(theMessage+"\n");
         switch (message.header.type){
