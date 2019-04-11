@@ -1,16 +1,8 @@
 const express = require("express");
 const http = require("http");
 const WebSocket = require("ws");
-const sqlite3 = require('sqlite3').verbose();
 
 const app = express();
-
-let db = new sqlite3.Database('../db/showsDatabase.db', (err) => {
-  if (err) {
-    console.error(err.message);
-  }
-  console.log('Connected to the showsDatabase.');
-});
 
 //initialize a simple http server
 const server = http.createServer(app);
